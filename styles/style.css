@@ -17,4 +17,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: 'PressStart2P-Regular', serif;
+  font-variation-settings: weight var(--main-font-weight);
+  background-color: var(--background-color);
+  color: var(--accent-color);
 }
