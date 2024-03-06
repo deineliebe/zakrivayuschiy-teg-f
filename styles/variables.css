@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font-weight: 400px;
+  --title-font-weight: 700px;
+  --background-color: #fff;
+  --accent-color: #000;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, transparent, #e7e7e7 1%, #1a1a1a 100%);
+  --button-hover-color: #fff;
+  --heart-main-color: red;
+}

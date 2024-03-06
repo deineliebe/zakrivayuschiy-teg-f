@@ -1,24 +1,338 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
-*/
-
 .page {
+  display: grid;
+  grid-template-columns: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+  grid-auto-flow: row;
+  place-content: start center;
+  padding-top: 100px;
+  padding-bottom: 105px;
+  color: var(--accent-color);
+  font-family: Inter-Variable, serif;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: 'PressStart2P-Regular', serif;
-  font-variation-settings: weight var(--main-font-weight);
+  block-size: 100%;
+  font-variation-settings: weight var(--title-font-weight)
+    var(--main-font-weight);
+  grid-gap: 100px;
+}
+
+.card {
+  border: 2px solid var(--accent-color);
   background-color: var(--background-color);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) 0 25px;
+  font-family: "PressStart2P-Regular", serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
+  line-height: 100%;
+}
+
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  line-height: 100%;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.theme-menu__button {
+  border: none;
+  font-size: 14px;
+  line-height: 100%;
+  text-decoration: none;
+  text-transform: inherit;
+  background-color: transparent;
+  transition: 0.3s ease;
+  will-change: transform;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  block-size: 2px;
+}
+
+.theme-menu__button:focus-visible::after {
+  background-color: var(--accent-color);
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
+  opacity: 0.6;
+}
+
+:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+:disabled::before {
+  content: "▶";
+  position: relative;
+  animation: arrow 0.5s infinite ease-in-out alternate;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section__card {
+  font-size: 18px;
+}
+
+.section__title {
+  padding: 6px 10px;
+  font-size: 18px;
+  line-height: 21.78px;
+  font-variation-settings: "wght" var(--main-font-weight);
+}
+
+.section__image__container {
+  position: relative;
+}
+
+.section__image {
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.section__image-sepia {
+  filter: sepia(90%);
+}
+
+.section__image-grayscale {
+  filter: grayscale(80%);
+}
+
+.section__image-saturate {
+  filter: saturate(400%);
+}
+
+.section__image-hue-rotate {
+  filter: hue-rotate(290deg);
+}
+
+.section__image-invert {
+  filter: invert(0.8);
+}
+
+.section__image-blur {
+  filter: blur(1rem);
+}
+
+.section__image-low-contrast-hue-rotate {
+  filter: contrast(50%) hue-rotate(20deg);
+}
+
+.section__image__label {
+  position: absolute;
+  opacity: 0.5;
   color: var(--accent-color);
+  font-family: "PressStart2P-Regular", serif;
+  font-size: 14px;
+  text-shadow: 1px var(--background-color);
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  mix-blend-mode: hard-light;
+}
+
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
+  .section__image__label {
+    text-shadow: 1px var(--background-color);
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+  }
+}
+
+.section__content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 20px 25px;
+}
+
+.section__content-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 21px;
+  font-variation-settings: "wght" var(--main-font-weight);
+}
+
+.button-like__container {
+  display: flex;
+  flex-direction: row;
+  align-self: end;
+}
+
+.section__icon-button {
+  border: none;
+  background-color: transparent;
+}
+
+.section__icon-button:focus {
+  outline: none;
+}
+
+.like-icon {
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  place-content: center;
+  border: 2px solid var(--accent-color);
+  font-family: "PressStart2P-Regular", serif;
+  font-size: 14px;
+  background-color: var(--background-color);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.button:focus {
+  position: relative;
+  box-shadow: 2px 2px;
+  outline: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  background-color: var(--button-hover-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  mix-blend-mode: difference;
+  block-size: 100%;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.section__like-button {
+  inline-size: 130px;
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+}
+
+.dialog__button {
+  gap: 8px;
+  margin: 2px auto 0;
+  padding: 15px;
+  inline-size: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
+}
+
+.floppy-image {
+  min-inline-size: 21px;
+  min-block-size: 21px;
+}
+
+.dialog__message {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "dialog__content"
+    "ok-button";
+  justify-content: center;
+  padding: 30px;
+  opacity: 1;
+  color: currentColor;
+  transition: opacity 0.3s ease-in-out;
+  inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
+}
+
+.dialog__message:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dialog__message::backdrop {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.dialog__content {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-areas: "floppy dialog-text";
+  grid-column-gap: 20px;
+  grid-area: dialog__content;
+  justify-content: start;
+  padding-block-end: 30px;
+  font-family: "PressStart2P-Regular", serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.dialog__message__floppy-image {
+  grid-area: floppy;
+  align-self: center;
+}
+
+.dialog__message__text {
+  grid-area: dialog-text;
+}
+
+.dialog__message__close-button {
+  grid-area: ok-button;
+  padding: 12.5px 0;
+  text-align: center;
+  inline-size: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
+}
+
+@media (width <= 375px) {
+  .page {
+    grid-template-columns: 100%;
+  }
+
+  .dialog__button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .floppy__image {
+    place-self: center;
+  }
 }
