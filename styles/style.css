@@ -177,8 +177,8 @@
 .section__content-block {
   display: flex;
   flex-direction: column;
-  gap: 27px;
-  padding: 20px 25px;
+  gap: 26px;
+  padding: 20px 25px 25px;
 }
 
 .section__content-block-text {
@@ -193,6 +193,7 @@
   display: flex;
   flex-direction: row;
   align-self: end;
+  block-size: 38px;
 }
 
 .section__icon-button {
@@ -249,8 +250,6 @@
 }
 
 .button__text {
-  position: relative;
-  z-index: 1;
   align-self: center;
 }
 
@@ -262,8 +261,8 @@
 }
 
 .floppy-image {
-  min-inline-size: 21px;
-  min-block-size: 21px;
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 .dialog__message {
@@ -322,9 +321,27 @@
   inline-size: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
 }
 
-@media (width <= 375px) {
+@media (width < 376px) {
   .page {
     grid-template-columns: 100%;
+  }
+
+  .section__title {
+    padding: 4px 10px 6px;
+  }
+
+  .section__content-block {
+    gap: 26px;
+    padding: 20px 25px 27px 26px;
+  }
+
+  .section__content-block-text {
+    gap: 27px;
+  }
+
+  .button-like__container {
+    gap: 2px;
+    block-size: 36px;
   }
 
   .dialog__button {
@@ -332,7 +349,9 @@
     flex-direction: column;
   }
 
-  .floppy__image {
+  .floppy-image {
     place-self: center;
+    inline-size: 28px;
+    block-size: 28px;
   }
 }
