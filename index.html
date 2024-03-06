@@ -422,9 +422,11 @@
         <use href="./svg/floppy.svg#floppy"></use>
       </svg>
     </div>
-    <button class="button dialog__message__close-button" type="button" onclick="window['dialog-save'].close()">
-      ок
-    </button>
+    <form method="dialog">
+      <button class="button dialog__message__close-button" type="submit" onclick="window['dialog-save'].close()">
+        <span class="button__text">ок</span>
+      </button>
+    </form>
     <form method="dialog">
       <button class="visually-hidden">
         <span>Закрыть окно</span>
