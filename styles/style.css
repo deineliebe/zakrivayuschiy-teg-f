@@ -178,14 +178,14 @@
 .section__content-block {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 24px;
   padding: 24px 25px 25px;
 }
 
 .section__content-block-text {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 26px;
   line-height: 21px;
   font-variation-settings: "wght" var(--main-font-weight);
 }
