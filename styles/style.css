@@ -62,8 +62,13 @@
   text-decoration: none;
   text-transform: inherit;
   background-color: transparent;
-  transition: 0.3s ease;
+  transition: opacity transform 0.3s ease;
   will-change: transform;
+}
+
+.theme-menu__button:hover:not(disabled) {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -121,35 +126,35 @@
   object-fit: cover;
   outline: 2px solid var(--accent-color);
   inline-size: 100%;
-  block-size: 100%;
-}
-
-.section__image-sepia {
-  filter: sepia(90%);
+  aspect-ratio: 1/1;
 }
 
 .section__image-grayscale {
-  filter: grayscale(80%);
+  filter: grayscale(30%);
 }
 
 .section__image-saturate {
-  filter: saturate(400%);
+  filter: saturate(300%);
 }
 
 .section__image-hue-rotate {
-  filter: hue-rotate(290deg);
+  filter: hue-rotate(20deg);
 }
 
 .section__image-invert {
-  filter: invert(0.8);
+  filter: invert(0.2);
+}
+
+.section__image-sepia {
+  filter: sepia(50%);
 }
 
 .section__image-blur {
-  filter: blur(1rem);
+  filter: blur(0.1rem);
 }
 
 .section__image-low-contrast-hue-rotate {
-  filter: contrast(50%) hue-rotate(20deg);
+  filter: contrast(70%) hue-rotate(20deg);
 }
 
 .section__image__label {
