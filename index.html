@@ -429,18 +429,18 @@
     </button>
 
     <dialog id="dialog-save" class="card dialog__message">
-      <div class="dialog__content">
-        <span class="dialog__message__text">Вставьте дискету,&nbsp;чтобы продолжить</span>
-        <svg width="39" height="39" viewBox="0 0 21 21" class="dialog__message__floppy-image">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-      </div>
       <form method="dialog">
+        <div class="dialog__content">
+          <span class="dialog__message__text">Вставьте дискету,&nbsp;чтобы продолжить</span>
+          <svg width="39" height="39" viewBox="0 0 21 21" class="dialog__message__floppy-image">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+        </div>
         <button class="button dialog__message__close-button" type="submit" onclick="window['dialog-save'].close()">
           <span class="button__text">ок</span>
         </button>
-      </form>
     </dialog>
+    </form>
   </main>
   <script src="./scripts/set-theme.js"></script>
   <script src="./scripts/like.js"></script>
