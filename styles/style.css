@@ -266,9 +266,25 @@
   block-size: 21px;
 }
 
-.dialog__message {
+.dialog__window {
   position: fixed;
   inset: 0;
+  padding: 30px;
+  color: currentColor;
+  transition: opacity 0.3s ease-in-out;
+  inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
+}
+
+.dialog__window:not([open]) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dialog__window::backdrop {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.dialog__window:is([open]) .dialog__message {
   display: grid;
   grid-template-columns: max-content;
   grid-template-rows: min-content;
@@ -276,20 +292,6 @@
     "dialog__content"
     "ok-button";
   justify-content: center;
-  padding: 30px;
-  opacity: 1;
-  color: currentColor;
-  transition: opacity 0.3s ease-in-out;
-  inline-size: clamp(21.313rem, 20.96rem + 1.502vw, 22.313rem);
-}
-
-.dialog__message:not([open]) {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dialog__message::backdrop {
-  background-color: rgb(0 0 0 / 0.7);
 }
 
 .dialog__content {
@@ -319,6 +321,7 @@
   grid-area: ok-button;
   padding: 12.5px 0;
   text-align: center;
+  text-transform: uppercase;
   inline-size: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
 }
 
