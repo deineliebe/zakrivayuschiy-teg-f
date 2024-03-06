@@ -1,5 +1,6 @@
 .theme-dark {
   --main-font-weight: 465px;
+  --title-font-weight: 785px;
   --background-color: #000;
   --accent-color: #00cc14;
   --background-image: repeating-linear-gradient(
@@ -14,6 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   --main-font-weight: 465px;
+  --title-font-weight: 785px;
   --background-color: #000;
   --accent-color: #00cc14;
   --background-image: repeating-linear-gradient(
