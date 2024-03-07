@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font-weight: 400px;
-  --title-font-weight: 700px;
+  --main-font-weight: 400;
+  --title-font-weight: 700;
   --background-color: #fff;
   --accent-color: #000;
   --background-image: repeating-linear-gradient(

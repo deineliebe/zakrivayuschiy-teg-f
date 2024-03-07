@@ -8,6 +8,7 @@
   <title>Закрывающий тег</title>
   <link rel="icon" href="./images/favicon.ico" sizes="any" />
   <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./images/favicon.png">
   <link rel="stylesheet" href="./fonts/fonts.css" />
   <link rel="stylesheet" href="./styles/globals.css" />
   <link rel="stylesheet" href="./styles/variables.css" />
@@ -18,8 +19,8 @@
 
 <body class="page">
   <header class="card header">
-    <h1 class="header__title">&lt;/HTML&gt;</h1>
-    <h2 class="header__subtitle">закрывающий тег</h2>
+    <a class="header__title">&lt;/HTML&gt;</a>
+    <h1 class="header__subtitle">закрывающий тег</h1>
     <nav class="theme-menu header__theme-menu">
       <ul class="theme-menu__list">
         <li class="theme-menu__item">
@@ -41,17 +42,17 @@
     </nav>
   </header>
   <main class="page__content">
-    <section class="card section__card">
-      <h3 class="section__title">
+    <article class="card article__card">
+      <h2 class="article__title">
         Фритрек и нулевой спринт: Подготовка к работе
       </h3>
-      <div class="section__image__container">
-        <img class="section__image" src="./images/study-mood.jpg"
+      <div class="article__image__container">
+        <img class="article__image" src="./images/study-mood.jpg"
           alt="Вид сквозь стекло на комнату с растениями, книжным шкафом и стульями. Лейбл: &lt;/HTML&gt;." loading="lazy" />
-        <span class="section__image__label">&lt;/HTML&gt;</span>
+        <span class="article__image__label">&lt;/HTML&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
@@ -63,8 +64,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -78,28 +79,23 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">1 спринт: Я — чистый лист</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-grayscale" src="./images/girl-and-blue-door.jpg"
-          alt="Девушка смотрит на телефон перед закрытой дверью. Фотография с чёрно-белым эффектом. Лейбл: &lt;/HTML&gt;" loading="lazy" />
-        <span class="section__image__label">&lt;/HTML&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">1 спринт: Я — чистый лист</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-grayscale" src="./images/girl-and-blue-door.jpg"
+          alt="Девушка смотрит на телефон перед закрытой дверью. Фотография с чёрно-белым эффектом. Лейбл: &lt;/HTML&gt;" loading="lazy" />
+        <span class="article__image__label">&lt;/HTML&gt;</span>
+      </div>
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             На первых этапах мы работали со страхами и сомнениями, которые
             часто испытывают новички. Один из них — страх перед чистым листом.
@@ -114,8 +110,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -129,28 +125,23 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="b">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">1 спринт: А если не получится?</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-saturate" src="./images/tech-road.jpg"
-          alt="Подземный переход. Фотография с увеличением насыщенности. Лейбл: &lt;css&gt;" loading="lazy" />
-        <span class="section__image__label">&lt;css&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">1 спринт: А если не получится?</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-saturate" src="./images/tech-road.jpg"
+          alt="Подземный переход. Фотография с увеличением насыщенности. Лейбл: &lt;css&gt;" loading="lazy" />
+        <span class="article__image__label">&lt;css&gt;</span>
+      </div>
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
@@ -163,8 +154,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -178,28 +169,23 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="c">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">2 спринт: Погоня за идеалом</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-hue-rotate" src="./images/is-this-good.jpg"
-          alt="Квадратный дом, аккуратно окружённый растениями. Фотография с изменением оттенка. Лейбл: &lt;desigions&gt;" loading="lazy" />
-        <span class="section__image__label">&lt;desigions&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">2 спринт: Погоня за идеалом</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-hue-rotate" src="./images/is-this-good.jpg"
+          alt="Квадратный дом, аккуратно окружённый растениями. Фотография с изменением оттенка. Лейбл: &lt;desigions&gt;" loading="lazy" />
+        <span class="article__image__label">&lt;desigions&gt;</span>
+      </div>
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             На этом этапе вы уже достаточно разбирались в основах вёрстки,
             чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
@@ -214,8 +200,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -229,28 +215,23 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="d">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">2 спринт: О тех, кто рядом</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-invert" src="./images/snow.jpg"
-          alt="Снег. Фотография с эффектом инвертирования цветов. Лейбл: care" loading="lazy" />
-        <span class="section__image__label">care</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">2 спринт: О тех, кто рядом</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-invert" src="./images/snow.jpg"
+          alt="Снег. Фотография с эффектом инвертирования цветов. Лейбл: care" loading="lazy" />
+        <span class="article__image__label">care</span>
+      </div>
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
@@ -265,8 +246,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -280,28 +261,23 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="e">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">3 спринт: Обходные стратегии</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-sepia" src="./images/sunny-day.jpg"
-          alt="Фотография стены с графити и тени человека с эффектом сепии. Лейбл: &lt;support&gt;" loading="lazy" />
-        <span class="section__image__label">&lt;support&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">3 спринт: Обходные стратегии</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-sepia" src="./images/sunny-day.jpg"
+          alt="Фотография стены с графити и тени человека с эффектом сепии. Лейбл: &lt;support&gt;" loading="lazy" />
+        <span class="article__image__label">&lt;support&gt;</span>
+      </div>
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
@@ -313,8 +289,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -328,29 +304,24 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="g">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
-            <span class="button__text"> Like </span>
+          <button class="button article__like-button" type="button">
+            <span class="button__text">Like</span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">3 спринт: Когда опускаются руки</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-blur" src="./images/bike.jpg"
+      </div>
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">3 спринт: Когда опускаются руки</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-blur" src="./images/bike.jpg"
           alt="Велосипед у стены в красных оттенках. Фотография c эффектом размытия. Лейбл: &lt;lifes-style: none;&gt;"
           loading="lazy" />
-        <span class="section__image__label">&lt;lifes-style: none;&gt;</span>
+        <span class="article__image__label">&lt;lifes-style: none;&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -365,8 +336,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -380,29 +351,24 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="f">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
-    <section class="card section__card">
-      <h3 class="section__title">«Сейчас я здесь»</h3>
-      <div class="section__image__container">
-        <img class="section__image section__image-low-contrast-hue-rotate" src="./images/time-is-gold.jpg"
+      </div>
+    </article>
+    <article class="card article__card">
+      <h2 class="article__title">«Сейчас я здесь»</h3>
+      <div class="article__image__container">
+        <img class="article__image article__image-low-contrast-hue-rotate" src="./images/time-is-gold.jpg"
           alt="Из протянутой руки сыпется песок. Фотография c уменьшением контраста и с изменением оттенка. Лейбл: &lt;experience&gt;"
           loading="lazy" />
-        <span class="section__image__label">&lt;experience&gt;</span>
+        <span class="article__image__label">&lt;experience&gt;</span>
       </div>
-      <article class="section__content-block">
-        <div class="section__content-block-text">
+      <div class="article__content-block">
+        <div class="article__content-block-text">
           <p>
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
@@ -421,8 +387,8 @@
           </p>
         </div>
         <div class="button-like__container">
-          <button class="section__icon-button" type="button">
-            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+          <button class="article__icon-button" type="button">
+            <svg width="39" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon" aria-hidden="true">
               <g clip-path="url(#a)" class="heart">
                 <path class="contour"
                   d="M12 6H9v3h3V6zm3 0h-3v3h3V6zM9 9H6v3h3V9zm0 3H6v3h3v-3zm0 3H6v3h3v-3zm9-9h-3v3h3V6zm-6 12H9v3h3v-3zm3 3h-3v3h3v-3zm3 3h-3v3h3v-3zm9-18h3v3h-3V6zm-3 0h3v3h-3V6zm6 3h3v3h-3V9zm0 3h3v3h-3v-3zm0 3h3v3h-3v-3zm-9-9h3v3h-3V6zm6 12h3v3h-3v-3zm-3 3h3v3h-3v-3zm-3 3h3v3h-3v-3zm0 3h-3v3h3v-3zm0-18h-3v3h3V9z"
@@ -436,19 +402,14 @@
               <path class="sparks"
                 d="M36 13h3v3h-3v-3zm-9 14h3v3h-3v-3zm-9 6h3v3h-3v-3zm-9-6h3v3H9v-3zM24 0h3v3h-3V0zm9 3h3v3h-3V3zM3 3h3v3H3V3zm9-3h3v3h-3V0zM0 13h3v3H0v-3z"
                 fill="red" />
-              <defs>
-                <clipPath id="h">
-                  <path fill="#fff" d="M0 0h39v36H0z" />
-                </clipPath>
-              </defs>
             </svg>
           </button>
-          <button class="button section__like-button" type="button">
+          <button class="button article__like-button" type="button">
             <span class="button__text"> Like </span>
           </button>
         </div>
-      </article>
-    </section>
+      </div>
+    </article>
     <button class="button dialog__button" onclick="window['dialog-save'].showModal()" aria-controls="dialog-save"
       type="button">
       <svg viewBox="0 0 21 21" class="floppy-image">
@@ -460,7 +421,7 @@
     <dialog id="dialog-save" class="card dialog__window">
       <form method="dialog" class="dialog__message">
         <div class="dialog__content">
-          <span class="dialog__message__text">Вставьте дискету,&nbsp;чтобы продолжить</span>
+          <p class="dialog__message__text">Вставьте дискету,&nbsp;чтобы продолжить</p>
           <svg width="39" height="39" viewBox="0 0 21 21" class="dialog__message__floppy-image">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>

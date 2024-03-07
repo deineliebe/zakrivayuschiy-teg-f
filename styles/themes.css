@@ -1,6 +1,6 @@
 .theme-dark {
-  --main-font-weight: 465px;
-  --title-font-weight: 785px;
+  --main-font-weight: 465;
+  --title-font-weight: 785;
   --background-color: #000;
   --accent-color: #00cc14;
   --background-image: repeating-linear-gradient(
@@ -14,16 +14,18 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  --main-font-weight: 465px;
-  --title-font-weight: 785px;
-  --background-color: #000;
-  --accent-color: #00cc14;
-  --background-image: repeating-linear-gradient(
-      to right,
-      #000 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(to top, #000 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #007f0c, #004306);
-  --button-hover-color: #00cc14;
+  .page {
+    --main-font-weight: 465;
+    --title-font-weight: 785;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        to right,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to top, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #007f0c, #004306);
+    --button-hover-color: #00cc14;
+  }
 }
