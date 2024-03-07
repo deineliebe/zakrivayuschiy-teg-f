@@ -217,7 +217,7 @@
   padding: 0;
   object-fit: min-content;
   background-color: transparent;
-  transform: color 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .article__icon-button:focus {

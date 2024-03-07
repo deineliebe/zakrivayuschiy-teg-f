@@ -1,20 +1,5 @@
-.theme-dark {
-  --main-font-weight: 465;
-  --title-font-weight: 785;
-  --background-color: #000;
-  --accent-color: #00cc14;
-  --background-image: repeating-linear-gradient(
-      to right,
-      #000 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(to top, #000 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #007f0c, #004306);
-  --button-hover-color: #00cc14;
-}
-
 @media (prefers-color-scheme: dark) {
-  .page {
+  :root {
     --main-font-weight: 465;
     --title-font-weight: 785;
     --background-color: #000;
@@ -28,4 +13,34 @@
       repeating-linear-gradient(to bottom, #007f0c, #004306);
     --button-hover-color: #00cc14;
   }
+}
+
+.theme-light {
+  --main-font-weight: 400;
+  --title-font-weight: 700;
+  --background-color: #fff;
+  --accent-color: #000;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, transparent, #e7e7e7 1%, #1a1a1a 100%);
+  --button-hover-color: #fff;
+}
+
+.theme-dark {
+  --main-font-weight: 465;
+  --title-font-weight: 785;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
+  --button-hover-color: #00cc14;
 }
