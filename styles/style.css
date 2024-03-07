@@ -222,9 +222,6 @@
 
 .article__icon-button:focus {
   border: 2px solid var(--accent-color);
-}
-
-.article__icon-button:focus {
   outline: none;
 }
 
