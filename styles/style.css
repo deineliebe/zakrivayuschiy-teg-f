@@ -28,31 +28,40 @@
 .header {
   display: flex;
   flex-direction: column;
-  gap: 21px;
-  padding: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) 0 23px;
+  gap: 20px;
+  padding: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) 0 20px;
   font-family: "PressStart2P", fantasy;
   font-size: 18px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .header__title {
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   line-height: 100%;
+  text-align: center;
 }
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   line-height: 100%;
+  text-align: center;
+}
+
+.theme-menu {
+  display: flex;
+  flex-direction: column;
+  place-self: center;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
+  padding-inline-start: 17px;
 }
 
 .theme-menu__button {
+  position: relative;
   border: none;
   font-size: 14px;
   line-height: 100%;
@@ -64,8 +73,8 @@
 }
 
 .theme-menu__button:hover:not(disabled) {
-  cursor: pointer;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .theme-menu__button::after {
@@ -94,7 +103,8 @@
 
 :disabled::before {
   content: "▶";
-  position: relative;
+  position: absolute;
+  top: 1px;
   animation: arrow 0.5s ease-in-out alternate infinite;
 }
 
@@ -195,18 +205,18 @@
 .button-like__container {
   display: flex;
   flex-direction: row;
-  align-self: end;
   gap: 5px;
+  align-self: end;
   block-size: 38px;
 }
 
 .article__icon-button {
-  background-color: transparent;
   display: flex;
-  padding: 0;
   place-content: center;
-  object-fit: min-content;
   border: 2px solid transparent;
+  padding: 0;
+  object-fit: min-content;
+  background-color: transparent;
   transform: color 0.3s ease;
 }
 

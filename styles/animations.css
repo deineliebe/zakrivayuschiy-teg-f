@@ -1,10 +1,10 @@
 @keyframes arrow {
   from {
-    right: 0;
+    left: -15px;
   }
 
   to {
-    right: 4px;
+    left: -11px;
   }
 }
 
